@@ -4,20 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.loginlinearlayout.LoginActivity"
-    android:orientation="vertical">
+    android:padding="@dimen/lly_login_padding"
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/txvSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginBottom="@dimen/txvSignIn_margin"
+        android:text="@string/txvSignIn"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium.Inverse" />
 
     <TextView
         android:id="@+id/txvUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:labelFor="@+id/edtUser"
+        android:text="@string/txvUser"
+        android:textAppearance="@android:style/TextAppearance.Holo.Small.Inverse" />
 
     <EditText
         android:id="@+id/edtUser"
@@ -25,60 +31,76 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:layout_marginBottom="@dimen/edtUser"/>
 
+    <!-- Hay que vincular el TextView con el EditText. No añade nada visual, simplemente los relaciona
+    contextualmente de manera interna-->
     <TextView
         android:id="@+id/txvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:labelFor="@+id/edtPassword"
+        android:text="@string/txvPassword"
+        android:textAppearance="@android:style/TextAppearance.Holo.Small.Inverse" />
 
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPassword" />
 
     <LinearLayout
         android:id="@+id/llySignOptions"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txvSingUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/lly_sign_options">
 
         <CheckBox
             android:id="@+id/chkRemember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CheckBox" />
+            android:text="@string/chkRemember" />
+
+        <TextView
+            android:id="@+id/txvSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnSignUp"
+            android:textAppearance="@android:style/TextAppearance.Holo.Small.Inverse" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnSignIn"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btnSignIn" />
 
     <Button
         android:id="@+id/btnGoogleSign"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="@color/colorGoogle"
+        android:drawableStart="@drawable/ic_google"
+        android:text="@string/btnGoogleSign"
+        android:layout_marginBottom="@dimen/btnGoogleSign"/>
 
     <Button
         android:id="@+id/btnFacebookSign"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="@color/colorFacebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/btnFacebookSign" />
 
 </LinearLayout>
