@@ -4,7 +4,7 @@
     <string name="txvUser">Nombre usuario/Email</string>
     <string name="txvPassword">Contraseña</string>
     <string name="chkRemember">Recordar usuario</string>
-    <string name="btnSignUp">Registro</string>
+    <string name="btnSignUp"><u>Registro</u></string>
     <string name="btnSignIn">Acceder</string>
     <string name="btnGoogleSign" translatable="false">Google</string>
     <string name="btnFacebookSign" translatable="false">Facebook</string>

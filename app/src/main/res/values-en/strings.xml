@@ -5,6 +5,6 @@
     <string name="txvUser">User name / email adress</string>
     <string name="txvPassword">Password</string>
     <string name="chkRemember">Remember me</string>
-    <string name="btnSignUp">Register</string>
+    <string name="btnSignUp"><u>Register</u></string>
     <string name="btnSignIn">Sign In</string>
 </resources>
