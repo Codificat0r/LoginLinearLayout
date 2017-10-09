@@ -2,7 +2,10 @@ package com.example.loginlinearlayout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+/**
+ * Esta clase da soporte de código a la activity del login
+ * @author Carlos Cruz Domínguez
+ */
 public class LoginActivity extends AppCompatActivity {
 
     @Override
